@@ -1,0 +1,95 @@
+\documentclass[12pt]{article}
+%\usepackage{a4}
+\setlength{\parskip}{0pt}
+\usepackage{geometry}
+ \geometry{a4paper,total={175mm,255mm}, left=20mm, top=20mm,}
+\setlength{\footnotesep}{12pt} 
+\usepackage{natbib}
+\usepackage{footnote}
+\usepackage{setspace}			    % to set space between two lines
+\doublespacing 						% to set space between two lines by doubles
+\usepackage[toc,page]{appendix} 	% to add the appendix
+\usepackage{amsmath}				% to write math formula
+\numberwithin{equation}{subsection} % to write math formula
+%%%%%%%%%%%%%%%%%%%%%%:Package for table.%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{pdflscape}				% to use landscape formate         %
+\usepackage{longtable} 				% to use long table				   %
+\usepackage{multirow,caption}		% to emerge two cells in the table %
+\usepackage{makecell} 				% to break line in a cell in table %
+\usepackage{pifont}					% to use font 					   %
+\usepackage{threeparttable}
+\setcounter{table}{0}
+%\usepackage{adjustbox,showframe}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}			% to cite name of author with ü,ö,ä
+\usepackage{graphicx}				% to import graphic (file eps) into latex
+\usepackage{float} 					% to fix figure in the section we want
+\usepackage{rotating}
+\usepackage{indentfirst}  % thut dau dong 
+\usepackage{placeins}                % to fix table
+\usepackage{makeidx}
+\makeindex
+\usepackage{mathtools}
+\usepackage{scrlayer-scrpage}
+\usepackage{hyperref} % to refer the link to the footnote
+\usepackage{bm}   % to create hat for letter
+\usepackage{textcomp} % to Display ' apostrophe
+\usepackage[autostyle]{csquotes}     % to mark a speech
+\usepackage{hyperref}   % to include URL link of website
+\linespread{1.3}
+\usepackage{fancyhdr}
+
+\usepackage[final]{pdfpages}
+
+
+\title{A Solution for Business Intelligence Data Challenge}%: A  statistical and mathematical approach
+
+
+
+\author{Phuong Van Nguyen\footnote{\underline{Corresponding email:}  \url{phuong.nguyen@economics.uni-kiel.de}}}% \\ \textit{A Ph.D. candidate in Quantitative Economics} \\
+}
+
+
+\date{}
+\begin{document}
+%\pagenumbering{gobble}
+\pagenumbering{arabic}
+\pagestyle{plain}
+ \maketitle
+ 	\notice
+
+
+\section{A brief introduction } \label{sec: A brief introduction}
+
+\subsection{Identify the business issues} \label{subsec:Identify the business problems}
+
+In this Business Intelligence Data Challenge, I address the two following fundamental business issues concerning online Marketing over the period of between March 1st, 2017 and March 26th, 2018.
+
+\begin{itemize} 
+\item First, investigate the changes in the daily KPIs.
+%, including the revenue, a number of customers, and the fraction of return customers,
+
+\item Second, examine the influences of 22 different online Marketing Channels on the daily KPIs.
+\end{itemize}
+
+\subsection{Findings on the business issues} \label{subsec:Findings}
+
+To address the business issues mentioned above, I wrote an Object-Oriented Programming (OOP) with Python and used Tableau for visualization.  Several findings are given below.
+
+\begin{enumerate} 
+\item The daily revenue is around 37,200. On the other hand, the highest revenue was almost 31,000 on April 1st, 2017, whereas the lowest one was approximately 9,500 on April 19th, 2017. Meanwhile, this KPI was quite stable over two periods of time: May - September 2017 and December 2017 - February 2018.
+
+\item Every day there were around 200 users on the average. Most notably, on April 8th, 2017 there was the highest number of over 1,200 users. Conversely, there was the lowest number of 23 users in the next 4 days. The number of users was quite stable at 200 users over two periods of time: May - September 2017 and December 2017 - February 2018.%A similar pattern takes place in the daily changes in the number of users.
+
+\item There is an extreme case that a customer returns 111 times.
+
+\item Among 22 online Marketing channels, the top five channels by user and revenue are \textbf{A}, \textbf{G}, \textbf{H}, \textbf{I}, and \textbf{B}.
+\end{enumerate}
+
+\section{Insightful analysis}\label{sec: Insightful analysis}
+\bibliographystyle{apa}
+\bibliography{Risk_Weight_Functions}
+
+
+
+\end{document}
