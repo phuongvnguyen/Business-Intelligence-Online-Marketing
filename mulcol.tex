@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{multicol}
+\setlength{\columnsep}{0.5cm}
+
+%\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage{geometry}
+\geometry{a4paper,total={175mm,255mm}, left=20mm, top=20mm,}
+%\usepackage[dvipsnames]{xcolor}
+%\pagecolor{SkyBlue}
+\usepackage{wrapfig}
+\usepackage{graphicx}	
+
+\title{A Solution for Business Intelligence Data Challenge}%: A  statistical and mathematical approach
+
+
+
+\begin{document}
+\maketitle
+\section{A brief introduction } \label{sec: A brief introduction}
+\begin{multicols}{2}
+\subsection{Identify the business issues}
+In this Business Intelligence Data Challenge, I address the two following fundamental business issues concerning online Marketing over the period of between March 1st, 2017 and March 26th, 2018.
+
+\begin{itemize} 
+\item First, investigate the changes in the daily KPIs.
+%, including the revenue, a number of customers, and the fraction of return customers,
+
+\item Second, examine the influences of 22 different online Marketing Channels on the daily KPIs.
+\end{itemize}
+
+\subsection{Computer Programming}
+
+A general process is briefly summarised as follows. First, data was directly downloaded from the Github repository. These two different datasets then emerged into one. The EDA was conducted after cleaning data, such as time format, missing data. On the other hand, the cleaned data was loaded to the SQL database for future uses. 
+
+Indeed, to do these Extract Load Transform (ETL) and  Exploratory Data Analysis (EDA) processes, I wrote an Object-Oriented Programming (OOP) with Python\footnote{It is worth noting my Python script was produced in the Colab environment. Thus, it might not run well on a local Anaconda.}. I also combine Python script with Tableau by the Tabpy package.
+\subsection{Summary of Results} \label{subsec:Findings}
+
+%To address the business issues mentioned above, I wrote an Object-Oriented Programming (OOP) with Python and used Tableau for visualization.  Several findings are given below.
+
+\begin{enumerate} 
+\item For a 1-year period between March 2017 and 2018, the E-commerce attracted more than 55,000 users and over 200,000 conversions were done via over 20 different Online Marketing Channels.
+
+\item The daily revenue was around 37,200. On the other hand, every day around 200 people on the average visited. More especially, the highest number of daily users reached 1,200 users. % On the other hand, the highest revenue was almost 31,000 on April 1st, 2017, whereas the lowest one was approximately 9,500 on April 19th, 2017. Meanwhile, this KPI was quite stable over two periods of time: May - September 2017 and December 2017 - February 2018.
+
+%\item Every day there were around 200 users on the average. Most notably, on April 8th, 2017 there was the highest number of over 1,200 users. Conversely, there was the lowest number of 23 users in the next 4 days. The number of users was quite stable at 200 users over two periods of time: May - September 2017 and December 2017 - February 2018.%A similar pattern takes place in the daily changes in the number of users.
+
+\item Most of the people visited only once. However, the number of users who returned twice was also notable. Especially, there is an extreme case that a customer returned 111 times.
+
+\item Among 22 online Marketing channels, the top five channels by user and revenue are \textbf{A}, \textbf{G}, \textbf{H}, \textbf{I}, and \textbf{B}.
+\end{enumerate}
+\section{Insightful analysis}\label{sec: Insightful analysis}
+\subsection{Overview on KPIs}
+
+
+
+\subsection{Channels by Revenue}
+
+\subsection{Channels by User}
+
+\subsection{Channels by Revenue and User over Time}
+
+Figure \ref{Fig: The impacts of the Online-Marketing Channels on KPIs} \& \ref{Fig: The impacts of the Online-Marketing Channels on users} below show how the top five online-marketing channel influence the daily number of users and revenue over time.
+
+\begin{wrapfigure}{r}{1\linewidth}
+\caption{Top Five Online Market by Daily Revenue}
+\label{Fig: The impacts of the Online-Marketing Channels on KPIs}
+\includegraphics[width=1\linewidth,height=0.7\linewidth]{channel_ren.png}
+\end{wrapfigure}
+
+\begin{wrapfigure}{r}{1\linewidth}
+\caption{Top Five Online Market by Daily User}
+\label{Fig: The impacts of the Online-Marketing Channels on users}
+\includegraphics[width=1\linewidth,height=0.7\linewidth]{channel_user.png}
+\end{wrapfigure}
+
+\end{multicols}
+
+\end{document}
